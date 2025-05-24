@@ -1,0 +1,12 @@
+name: CleanArchitectureApi
+services:
+    clean-architecture-api:
+        build: 
+          context: .
+          dockerfile: Dockerfile
+        image: clean-architecture-api:latest
+        ports:
+          - 5184:8080
+        container_name: clean-architecture-api
+        environment:
+          - ASPNETCORE_ENVIRONMENT=DEV
